@@ -1,0 +1,15 @@
+//
+//  Config.xcconfig
+//  MarvelApp
+//
+//  Created by admin on 5/11/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+API_KEY = 0bbb4b778548bfe00cac146cfd7a56c3
+HASH_VALUE = 0a7903b315e7e31168ba5c33e7c59ccd
+TS_VALUE = 1
+CHARACTERS_URL = https:\/\/gateway.marvel.com:443/v1/public/characters
