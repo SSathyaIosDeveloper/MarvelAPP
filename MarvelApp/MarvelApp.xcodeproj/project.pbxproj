@@ -11,7 +11,6 @@
 		84248CE3282A42B800F004CA /* CharactersDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84248CE1282A42B800F004CA /* CharactersDetailViewController.xib */; };
 		84248CE9282A96CB00F004CA /* CharactersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84248CE8282A96CB00F004CA /* CharactersTableViewCell.xib */; };
 		84248CEC282ABA9E00F004CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84248CEB282ABA9E00F004CA /* Constants.swift */; };
-		84248CF2282BA08400F004CA /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84248CF1282BA08400F004CA /* Config.xcconfig */; };
 		84248CFB282BAD3C00F004CA /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84248CFA282BAD3C00F004CA /* CharacterDetailViewModel.swift */; };
 		842ED3F2281A846B005BD9BB /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ED3F1281A846B005BD9BB /* CharactersViewModel.swift */; };
 		842ED3F7281A86CB005BD9BB /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ED3F6281A86CB005BD9BB /* CharactersModel.swift */; };
@@ -52,7 +51,6 @@
 		84248CE1282A42B800F004CA /* CharactersDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersDetailViewController.xib; sourceTree = "<group>"; };
 		84248CE8282A96CB00F004CA /* CharactersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CharactersTableViewCell.xib; path = MarvelApp/Views/CharactersTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		84248CEB282ABA9E00F004CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		84248CF1282BA08400F004CA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		84248CFA282BAD3C00F004CA /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		842ED3F1281A846B005BD9BB /* CharactersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		842ED3F6281A86CB005BD9BB /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				847A3B14281A70E90000D6CA /* Info.plist */,
-				84248CF1282BA08400F004CA /* Config.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -342,7 +339,6 @@
 				847A3B10281A70E90000D6CA /* Assets.xcassets in Resources */,
 				847A3B0E281A70E80000D6CA /* Main.storyboard in Resources */,
 				843F4CA6281C259E00CA5AA3 /* CharactersCollectionViewCell.xib in Resources */,
-				84248CF2282BA08400F004CA /* Config.xcconfig in Resources */,
 				84248CE9282A96CB00F004CA /* CharactersTableViewCell.xib in Resources */,
 				84DF2123282E87000069D6B5 /* Readme.md in Resources */,
 			);
@@ -424,7 +420,6 @@
 /* Begin XCBuildConfiguration section */
 		847A3B2B281A70E90000D6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84248CF1282BA08400F004CA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -486,7 +481,6 @@
 		};
 		847A3B2C281A70E90000D6CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84248CF1282BA08400F004CA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
