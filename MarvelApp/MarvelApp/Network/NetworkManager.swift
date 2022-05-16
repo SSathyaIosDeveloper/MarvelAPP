@@ -44,7 +44,7 @@ class NetworkManager: NetworkManagerProtocol {
                 return
             }
             do {
-                let characters = try JSONDecoder().decode(CharactersModel.self, from: data)
+                let characters = try JSONDecoder().decode(Character.self, from: data)
                 let results = characters.data?.results
                 completion(results, nil)
             } catch let error {

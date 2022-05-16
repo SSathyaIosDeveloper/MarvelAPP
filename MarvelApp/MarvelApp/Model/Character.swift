@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CharactersModel: Codable  {
+struct Character: Codable  {
     var code: Int?
     var status: String?
     var copyright: String?

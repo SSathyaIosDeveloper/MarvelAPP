@@ -40,6 +40,8 @@ Helper
 Views
 
     Used xib files to desine custom cells and views.
-    
 
+MarvelAppTests
+
+    Having Code coverage of 54.2% 
     
