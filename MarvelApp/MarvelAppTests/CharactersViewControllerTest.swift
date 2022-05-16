@@ -15,7 +15,7 @@ class CharactersViewControllerTest: XCTestCase {
     
     func makeCharactersViewController() -> CharactersViewController {
         charactersViewController = CharactersViewController()
-        charactersViewController.testPresenter = presenter
+        charactersViewController.charactersPresenter = presenter
         charactersViewController.loadViewIfNeeded()
         return charactersViewController
     }
@@ -30,7 +30,6 @@ class CharactersViewControllerTest: XCTestCase {
         charactersViewController.viewDidLoad()
         XCTAssertTrue(presenter.onViewLoadedCalled)
     }
-
 }
 
 class CharactersPresenterMock: CharactersPresenter {

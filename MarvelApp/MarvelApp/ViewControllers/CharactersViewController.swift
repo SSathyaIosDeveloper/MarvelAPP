@@ -17,7 +17,7 @@ class CharactersViewController: UIViewController {
     private var characterTableView: UITableView
     private var activityIndicatorView: UIActivityIndicatorView
     private var charactersViewModel: CharactersViewModel
-    var testPresenter: CharactersPresenter?
+    var charactersPresenter: CharactersPresenter?
     
     init() {
         self.charactersViewModel = CharactersViewModel(networkManager: NetworkManager())
@@ -32,7 +32,7 @@ class CharactersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.testPresenter?.onViewLoaded()
+        self.charactersPresenter?.onViewLoaded()
         self.setUpViewController()
     }
     

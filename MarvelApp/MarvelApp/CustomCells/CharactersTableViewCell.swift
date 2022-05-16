@@ -12,10 +12,15 @@ protocol CollectionViewCellDelegate: AnyObject {
     func collectionView(collectionviewcell: CharactersCollectionViewCell?, result: Results, didTappedInTableViewCell: CharactersTableViewCell)
 }
 
+protocol CharactersTableViewCellPresenter {
+    func onlayoutSubviewsCalled()
+}
+
 class CharactersTableViewCell: UITableViewCell {
     
     @IBOutlet weak private var  charctersCollectionView: UICollectionView!
     weak var cellDelegate: CollectionViewCellDelegate?
+    var charactersTableViewCellPresenter: CharactersTableViewCellPresenter?
     
     override func awakeFromNib() {
         self.charctersCollectionView.register(UINib(nibName: CHARACTERS_COLLECTIONVIEW_CELL, bundle: nil),forCellWithReuseIdentifier: CHARACTERS_COLLECTIONVIEW_CELL)
@@ -29,6 +34,7 @@ class CharactersTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.charactersTableViewCellPresenter?.onlayoutSubviewsCalled()
         self.contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
     }
     
@@ -57,5 +63,4 @@ extension CharactersTableViewCell: UICollectionViewDataSource, UICollectionViewD
         let cell = collectionView.cellForItem(at: indexPath) as? CharactersCollectionViewCell
         self.cellDelegate?.collectionView(collectionviewcell: cell, result: characters, didTappedInTableViewCell: self)
     }
-    
 }

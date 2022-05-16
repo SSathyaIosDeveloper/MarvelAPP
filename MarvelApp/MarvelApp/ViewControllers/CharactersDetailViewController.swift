@@ -21,7 +21,7 @@ class CharactersDetailViewController: UIViewController {
     private var characterDetailViewModel = CharacterDetailViewModel(networkManager: NetworkManager())
     private var result: Results? = Results()
     private var activityIndicatorView = UIActivityIndicatorView()
-    var testPresenter: CharacterDetailPresenter?
+    var characterDetailPresenter: CharacterDetailPresenter?
     
     init(with result: Results?) {
         super.init(nibName: nil, bundle: nil)
@@ -34,7 +34,7 @@ class CharactersDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.testPresenter?.onViewLoaded()
+        self.characterDetailPresenter?.onViewLoaded()
         self.view.backgroundColor = UIColor.white
         self.setUpNavigationController()
         self.setUpActivityIndicator()

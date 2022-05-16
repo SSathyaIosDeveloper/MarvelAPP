@@ -78,8 +78,8 @@
             filePath = "MarvelAppTests/CharactersViewControllerTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "CharactersPresenterMock"
             landmarkType = "3">
             <Locations>
@@ -141,8 +141,8 @@
             filePath = "MarvelAppTests/CharactersViewControllerTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "onViewLoaded()"
             landmarkType = "7">
             <Locations>
@@ -362,8 +362,8 @@
             filePath = "MarvelApp/CustomCells/CharactersTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>

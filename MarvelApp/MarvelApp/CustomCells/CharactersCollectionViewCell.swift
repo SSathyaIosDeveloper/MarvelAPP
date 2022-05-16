@@ -7,11 +7,22 @@
 
 import UIKit
 
+protocol CharactersCollectionViewCellPresenter {
+    func onlayoutSubviewsCalled()
+}
+
 class CharactersCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak private var characterImageView: UIImageView!
     @IBOutlet weak private var headerLabel: UILabel!
+    
+    var charactersCollectionViewCellPresenter: CharactersCollectionViewCellPresenter?
     var onReuse: () -> Void = {}
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.charactersCollectionViewCellPresenter?.onlayoutSubviewsCalled()
+    }
     
     func configureInfo(result: Results) {
         let urlPath = result.thumbnail?.path ?? EMPTY_STRING

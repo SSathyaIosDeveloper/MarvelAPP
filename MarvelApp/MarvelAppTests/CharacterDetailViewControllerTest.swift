@@ -14,7 +14,7 @@ class CharacterDetailViewControllerTest: XCTestCase {
     
     func makeCharactersViewController() -> CharactersDetailViewController {
         charactersDetailViewController = CharactersDetailViewController(with: nil)
-        charactersDetailViewController.testPresenter = presenter
+        charactersDetailViewController.characterDetailPresenter = presenter
         charactersDetailViewController.loadViewIfNeeded()
         return charactersDetailViewController
     }
