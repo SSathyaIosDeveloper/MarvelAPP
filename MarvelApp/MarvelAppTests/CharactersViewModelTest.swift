@@ -11,11 +11,18 @@ import XCTest
 class CharactersViewModelTest: XCTestCase {
     var charactersViewModel: CharactersViewModel!
     var networkManager: NetworkManager!
-    
-    override func setUpWithError() throws {
-           try super.setUpWithError()
-           networkManager = NetworkManager()
-           charactersViewModel = CharactersViewModel(networkManager: networkManager)
-       }
+
+    func makeCharactersViewModel() -> CharactersViewModel {
+        networkManager = NetworkManager()
+        charactersViewModel = CharactersViewModel(networkManager: networkManager)
+        return charactersViewModel
+    }
+
+    func testCharactersViewController() {
+        let _ = makeCharactersViewModel()
+        XCTAssertNotNil(charactersViewModel)
+    }
 }
+
+
 
