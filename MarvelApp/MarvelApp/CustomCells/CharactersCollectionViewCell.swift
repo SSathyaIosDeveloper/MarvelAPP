@@ -30,7 +30,9 @@ class CharactersCollectionViewCell: UICollectionViewCell {
                     self.characterImageView.image = image
                 }
             } catch {
+                #if DEBUG
                 print(error)
+                #endif
             }
         }
         self.onReuse = {

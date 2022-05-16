@@ -33,7 +33,9 @@ class CharacterDetailViewModel {
         self.networkManager?.getDataFromMarvelAPI(forID: resultId, completion: {[weak self] (results: [Results]?, errors: Error?) in
             self?.hideLoading?()
             if errors != nil {
+                #if DEBUG
                 print(errors ?? Error.self)
+                #endif
                 self?.showError?()
             } else {
                 self?.characterDetailResults = results ?? []

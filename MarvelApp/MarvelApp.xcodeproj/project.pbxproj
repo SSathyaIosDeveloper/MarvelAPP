@@ -185,6 +185,7 @@
 		847A3AFA281A70E80000D6CA = {
 			isa = PBXGroup;
 			children = (
+				84DF2122282E87000069D6B5 /* Readme.md */,
 				847A3B05281A70E80000D6CA /* MarvelApp */,
 				847A3B1C281A70E90000D6CA /* MarvelAppTests */,
 				847A3B04281A70E80000D6CA /* Products */,
@@ -215,7 +216,6 @@
 				84248CEA282ABA5F00F004CA /* Constants */,
 				847A3B39281A79F90000D6CA /* Resources */,
 				84248CFE282BF4C300F004CA /* Configuration */,
-				84DF2122282E87000069D6B5 /* Readme.md */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";

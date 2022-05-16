@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-protocol testCharacterDetailPresenter {
+protocol CharacterDetailPresenter {
     func onViewLoaded()
 }
 
@@ -21,7 +21,7 @@ class CharactersDetailViewController: UIViewController {
     private var characterDetailViewModel = CharacterDetailViewModel(networkManager: NetworkManager())
     private var result: Results? = Results()
     private var activityIndicatorView = UIActivityIndicatorView()
-    var testPresenter: testCharacterDetailPresenter?
+    var testPresenter: CharacterDetailPresenter?
     
     init(with result: Results?) {
         super.init(nibName: nil, bundle: nil)
@@ -99,7 +99,9 @@ class CharactersDetailViewController: UIViewController {
                     self.characterImageView.image = image
                 }
             } catch {
+                #if DEBUG
                 print(error)
+                #endif
             }
         }
     }

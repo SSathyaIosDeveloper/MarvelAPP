@@ -28,7 +28,7 @@ class CharacterDetailViewControllerTest: XCTestCase {
     
 }
 
-class CharacterDetailPresenterMock: testCharacterDetailPresenter {
+class CharacterDetailPresenterMock: CharacterDetailPresenter {
     
     private(set) var onViewLoadedCalled = false
     
