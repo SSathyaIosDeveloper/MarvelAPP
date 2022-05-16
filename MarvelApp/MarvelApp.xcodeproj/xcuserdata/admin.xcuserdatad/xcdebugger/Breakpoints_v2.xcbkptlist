@@ -78,8 +78,8 @@
             filePath = "MarvelAppTests/CharactersViewControllerTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "CharactersPresenterMock"
             landmarkType = "3">
             <Locations>
@@ -141,8 +141,8 @@
             filePath = "MarvelAppTests/CharactersViewControllerTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "onViewLoaded()"
             landmarkType = "7">
             <Locations>
@@ -204,8 +204,8 @@
             filePath = "MarvelAppTests/CharactersViewControllerTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "testViewDidLoadCallsPresenter()"
             landmarkType = "7">
             <Locations>
@@ -267,8 +267,8 @@
             filePath = "MarvelAppTests/CharactersViewControllerTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "testViewDidLoadCallsPresenter()"
             landmarkType = "7">
             <Locations>

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol testCharactersPresenter {
+protocol CharactersPresenter {
     func onViewLoaded()
 }
 
@@ -17,7 +17,7 @@ class CharactersViewController: UIViewController {
     private var characterTableView: UITableView
     private var activityIndicatorView: UIActivityIndicatorView
     private var charactersViewModel: CharactersViewModel
-    var testPresenter: testCharactersPresenter?
+    var testPresenter: CharactersPresenter?
     
     init() {
         self.charactersViewModel = CharactersViewModel(networkManager: NetworkManager())

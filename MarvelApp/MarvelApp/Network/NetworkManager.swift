@@ -38,9 +38,9 @@ class NetworkManager: NetworkManagerProtocol {
         guard let request = self.formingUrlRequest(withID: id) else { return }
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-#if DEBUG
+                #if DEBUG
                 print(error ?? UNKNOWN_ERROR)
-#endif
+                #endif
                 return
             }
             do {

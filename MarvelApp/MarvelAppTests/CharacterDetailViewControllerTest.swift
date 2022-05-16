@@ -19,21 +19,21 @@ class CharacterDetailViewControllerTest: XCTestCase {
         return charactersDetailViewController
     }
     
+    func testCharactersDetailViewController() {
+        let _ = makeCharactersViewController()
+        XCTAssertNotNil(charactersDetailViewController)
+    }
+    
     func testViewDidLoadCallsPresenter() {
         let charactersViewController = makeCharactersViewController()
         charactersViewController.viewDidLoad()
         XCTAssertTrue(presenter.onViewLoadedCalled)
     }
-    
-    
 }
 
 class CharacterDetailPresenterMock: CharacterDetailPresenter {
-    
     private(set) var onViewLoadedCalled = false
-    
     func onViewLoaded() {
         onViewLoadedCalled = true
     }
-    
 }
