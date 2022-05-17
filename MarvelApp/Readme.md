@@ -3,7 +3,7 @@
 <p align="center">
 This  repository includes an iOS application to display the list of Marvel charcaters and character in detail.
 
-**Characters Screen** Displays list of characters with their thumbnails, names.
+**Characters Screen** Displays list of characters with their thumbnails and names.
 
 **Character Detail Info Screen** Displays picture of a character, name, and it's full description.
 
