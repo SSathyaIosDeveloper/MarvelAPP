@@ -1,19 +1,20 @@
 <h1 align="center">Marvel API POC Description</h1>
-<h3 align="center">An iOS application to display list of Marvel characters and its descriptions.</h3>##This  repository includes an iOS application to display the list of Marvel charcaters and character in detail.## Screens- **Characters:** displays list of characters with their thumbnails, names.
-- **Character Detail:** displays picture of a character, name, and it's full description.
+<h3 align="center">An iOS application to display list of Marvel characters and its descriptions.</h3>This  repository includes an iOS application to display the list of Marvel charcaters and character in detail.
+**Characters Screen** Displays list of characters with their thumbnails, names.
+**Character Detail Info Screen** Displays picture of a character, name, and it's full description.
 <p align="center">
 <img src="./Screens/CharactersList.png" height="512">
 <img src="./Screens/CharacterDetail.png" height="512">
-## 
+
 **Architecture**
 
      This app has been developed using a simple MVVM architectural pattern. 
      
 **Coordinator**
 
-  1. Parent Coordinator: Base coordinator class with Navigation Controller which is called in Scene Delegate method.
-  2. Characters Coordinator: Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersViewControllerClass.
-  3. CharacterDetailCoordinator:Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersDetailViewControllerClass.
+  Parent Coordinator: Base coordinator class with Navigation Controller which is called in Scene Delegate method.
+  Characters Coordinator: Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersViewControllerClass.
+  CharacterDetailCoordinator:Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersDetailViewControllerClass.
 
 **NetworkManager**
 
