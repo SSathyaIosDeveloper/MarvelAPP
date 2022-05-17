@@ -9,7 +9,7 @@ This  repository includes an iOS application to display the list of Marvel charc
 
 **Architecture**
 
-     This app has been developed using a simple MVVM architectural pattern. 
+     This application has been developed using a MVVM architectural pattern. 
      
 **Coordinator**
 
