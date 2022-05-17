@@ -1,9 +1,6 @@
 <h1 align="center">Marvel API POC Description</h1>
 <h3 align="center">An iOS application to display list of Marvel characters and its descriptions.</h3>This  repository includes an iOS application to display the list of Marvel charcaters and character in detail.
 <p align="center">
-<img src="/Users/admin/Documents/LatestMarvelSourceCode/MarvelAPP/MarvelApp/Screens/Characters.png" height="512">
-<img src="/Users/admin/Documents/LatestMarvelSourceCode/MarvelAPP/MarvelApp/Screens/Character Detail Info.png" height="512">
-
 **Characters Screen** Displays list of characters with their thumbnails, names.
 **Character Detail Info Screen** Displays picture of a character, name, and it's full description.
 
