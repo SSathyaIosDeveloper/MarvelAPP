@@ -46,7 +46,7 @@ This  repository includes an iOS application to display the list of Marvel charc
 **Helper**
 
     ImageLoader Class is used to load the image. Used UUID to find the URLSession task and cancel 
-    the particalr task when the cells are reload.
+    the particalr task when the cells are reused.
     
 **Views**
 
