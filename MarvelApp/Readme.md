@@ -1,47 +1,61 @@
+<h1 align="center">Marvel API POC Description</h1>
+<h3 align="center">An iOS application to display list of Marvel characters and its descriptions.</h3>##This  repository includes an iOS application to display the list of Marvel charcaters and character in detail.## Screens- **Characters:** displays list of characters with their thumbnails, names.
+- **Character Detail:** displays picture of a character, name, and it's full description.
+<p align="center">
+<img src="./Screens/CharactersList.png" height="512">
+<img src="./Screens/CharacterDetail.png" height="512">
+## 
+**Architecture**
 
-Marvel API POC Description
-
-Architecture:
-
-  Used MVVM design pattern.
-  
-Coordinator:
+     This app has been developed using a simple MVVM architectural pattern. 
+     
+**Coordinator**
 
   1. Parent Coordinator: Base coordinator class with Navigation Controller which is called in Scene Delegate method.
   2. Characters Coordinator: Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersViewControllerClass.
   3. CharacterDetailCoordinator:Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersDetailViewControllerClass.
 
-NetworkManager:
+**NetworkManager**
 
    This class is used to call Marvel Api to get response from it.  
    formingUrlRequest method is used to form url request.
    NetworkManagerProtocol is used to get data from MarvelAPI.
    
-ViewControllers
+**ViewControllers**
 
     CharactersViewController is acts as a mediator between CharactersViewModel and
     CharactersView.
     CharactersDetailViewController is acts as a mediator between CharactersDetailViewModel and 
     CharactersDetailView.
     
-Model
+**Model**
 
-    CharacterModel is a model class. 
+    Character is a model class. 
     
-ViewModel
+**ViewModel**
 
     CharactersViewModel is used to get data from marvel Api, map it to model class and convey it
     to ViewControllers.
     
-Helper
+**Helper**
 
     ImageLoader Class is used to load the image. Used UUID to find the URLSession task and cancel the particalr task when the cells are reload.
     
-Views
+**Views**
 
     Used xib files to desine custom cells and views.
 
-MarvelAppTests
+**MarvelAppTests**
 
-    Having Code coverage of 54.2% 
+    This folder is used to write unit test cases. Its Code coverage is 57.3% 
     
+**Config** 
+
+    This file is used to add API keys. Using Info plist, we can access this values. This file is added in .gitignore to ignore in git repository.
+
+
+
+
+
+
+  
