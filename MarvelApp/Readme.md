@@ -14,8 +14,10 @@ This  repository includes an iOS application to display the list of Marvel charc
 **Coordinator**
 
   Parent Coordinator: Base coordinator class with Navigation Controller which is called in Scene Delegate method.
-  Characters Coordinator: Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersViewControllerClass.
-  CharacterDetailCoordinator:Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. It will invoke CharactersDetailViewControllerClass.
+  Characters Coordinator: Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. 
+  It will invoke CharactersViewControllerClass.
+  CharacterDetailCoordinator:Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. 
+  It will invoke CharactersDetailViewControllerClass.
 
 **NetworkManager**
 
@@ -41,7 +43,8 @@ This  repository includes an iOS application to display the list of Marvel charc
     
 **Helper**
 
-    ImageLoader Class is used to load the image. Used UUID to find the URLSession task and cancel the particalr task when the cells are reload.
+    ImageLoader Class is used to load the image. Used UUID to find the URLSession task and cancel 
+    the particalr task when the cells are reload.
     
 **Views**
 
@@ -53,7 +56,8 @@ This  repository includes an iOS application to display the list of Marvel charc
     
 **Config** 
 
-    This file is used to add API keys. Using Info plist, we can access this values. This file is added in .gitignore to ignore in git repository.
+    This file is used to add API keys. Using Info plist, we can access this values. 
+    This file is added in .gitignore to ignore in git repository.
 </p>
 
 
