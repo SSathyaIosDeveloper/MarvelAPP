@@ -14,8 +14,10 @@ This  repository includes an iOS application to display the list of Marvel charc
 **Coordinator**
 
   Parent Coordinator: Base coordinator class with Navigation Controller which is called in Scene Delegate method.
+  
   Characters Coordinator: Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. 
   It will invoke CharactersViewControllerClass.
+  
   CharacterDetailCoordinator:Characters Coordinator class is added as Child Coordinator class for Parent Coordinator class. 
   It will invoke CharactersDetailViewControllerClass.
 
