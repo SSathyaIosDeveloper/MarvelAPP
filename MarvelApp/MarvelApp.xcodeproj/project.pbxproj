@@ -202,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				84DF2122282E87000069D6B5 /* Readme.md */,
+				84A729C928336B0A00583733 /* Screens */,
 				847A3B05281A70E80000D6CA /* MarvelApp */,
 				847A3B1C281A70E90000D6CA /* MarvelAppTests */,
 				847A3B04281A70E80000D6CA /* Products */,
@@ -231,7 +232,6 @@
 				84248CEA282ABA5F00F004CA /* Constants */,
 				847A3B39281A79F90000D6CA /* Resources */,
 				842ED3F8281A8EE8005BD9BB /* Network */,
-				84A729C928336B0A00583733 /* Screens */,
 				84248CFE282BF4C300F004CA /* Configuration */,
 			);
 			path = MarvelApp;
