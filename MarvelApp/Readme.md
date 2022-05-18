@@ -54,7 +54,7 @@ This  repository includes an iOS application to display the list of Marvel charc
 
 **MarvelAppTests**
 
-    This folder is used to write unit test cases. Its Code coverage is **94.5%**
+    This folder is used to write unit test cases. Its Code coverage is <b>94.5%</b>
     
 **Config** 
 
