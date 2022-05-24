@@ -11,11 +11,11 @@ import XCTest
 class ViewControllerTest: XCTestCase {
     
     var viewController: ViewController!
-    let presenter = PresenterMock()
+    let tester = TesterMock()
     
     func makeCharactersViewController() -> ViewController {
         viewController = ViewController()
-        viewController.viewPresenter = presenter
+        viewController.viewTester = tester
         viewController.loadViewIfNeeded()
         return viewController
     }
@@ -26,7 +26,7 @@ class ViewControllerTest: XCTestCase {
     }
 }
 
-class PresenterMock: ViewPresenter {
+class TesterMock: ViewTester {
     
     private(set) var onViewLoadedCalled = false
     

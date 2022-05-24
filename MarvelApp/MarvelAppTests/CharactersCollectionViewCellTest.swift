@@ -10,11 +10,11 @@ import XCTest
 
 class CharactersCollectionViewCellTest: XCTestCase {
     var charactersCollectionViewCell: CharactersCollectionViewCell!
-    let presenter = CharactersCollectionViewCellMock()
+    let tester = CharactersCollectionViewCellMock()
     
     func makeCharactersCollectionViewCell() -> CharactersCollectionViewCell {
         charactersCollectionViewCell = CharactersCollectionViewCell()
-        charactersCollectionViewCell.charactersCollectionViewCellPresenter = presenter
+        charactersCollectionViewCell.charactersCollectionViewCellTester = tester
         charactersCollectionViewCell.layoutIfNeeded()
         return charactersCollectionViewCell
     }
@@ -27,11 +27,11 @@ class CharactersCollectionViewCellTest: XCTestCase {
     func testCharactersTableViewCellDidLoadCalls() {
         let charactersTableViewCell = makeCharactersCollectionViewCell()
         charactersTableViewCell.layoutSubviews()
-        XCTAssertTrue(presenter.layoutSubviewsCalled)
+        XCTAssertTrue(tester.layoutSubviewsCalled)
     }
 }
 
-class CharactersCollectionViewCellMock: CharactersCollectionViewCellPresenter {
+class CharactersCollectionViewCellMock: CharactersCollectionViewCellTester {
     
     private(set) var layoutSubviewsCalled = false
     

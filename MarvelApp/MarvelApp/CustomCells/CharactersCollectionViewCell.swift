@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CharactersCollectionViewCellPresenter {
+protocol CharactersCollectionViewCellTester{
     func onlayoutSubviewsCalled()
 }
 
@@ -16,12 +16,12 @@ class CharactersCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak private var characterImageView: UIImageView!
     @IBOutlet weak private var headerLabel: UILabel!
     
-    var charactersCollectionViewCellPresenter: CharactersCollectionViewCellPresenter?
+    var charactersCollectionViewCellTester: CharactersCollectionViewCellTester?
     var onReuse: () -> Void = {}
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.charactersCollectionViewCellPresenter?.onlayoutSubviewsCalled()
+        self.charactersCollectionViewCellTester?.onlayoutSubviewsCalled()
     }
     
     func configureInfo(result: Results) {

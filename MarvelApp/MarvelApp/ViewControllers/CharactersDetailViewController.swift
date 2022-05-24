@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-protocol CharacterDetailPresenter {
+protocol CharacterDetailTester {
     func onViewLoaded()
 }
 
@@ -21,7 +21,7 @@ class CharactersDetailViewController: UIViewController {
     private var characterDetailViewModel = CharacterDetailViewModel(networkManager: NetworkManager())
     private var result: Results? = Results()
     private var activityIndicatorView = UIActivityIndicatorView()
-    var characterDetailPresenter: CharacterDetailPresenter?
+    var characterDetailTester: CharacterDetailTester?
     
     init(with result: Results?) {
         super.init(nibName: nil, bundle: nil)
@@ -34,7 +34,7 @@ class CharactersDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.characterDetailPresenter?.onViewLoaded()
+        self.characterDetailTester?.onViewLoaded()
         self.view.backgroundColor = UIColor.white
         self.setUpNavigationController()
         self.setUpActivityIndicator()

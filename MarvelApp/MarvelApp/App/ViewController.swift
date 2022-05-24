@@ -7,17 +7,17 @@
 
 import UIKit
 
-protocol ViewPresenter {
+protocol ViewTester {
     func onViewLoaded()
 }
 
 class ViewController: UIViewController {
     
-    var viewPresenter: ViewPresenter?
+    var viewTester: ViewTester?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewPresenter?.onViewLoaded()
+        self.viewTester?.onViewLoaded()
     }
     
 }

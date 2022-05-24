@@ -10,11 +10,11 @@ import XCTest
 class CharacterDetailViewControllerTest: XCTestCase {
     
     var charactersDetailViewController: CharactersDetailViewController!
-    let presenter = CharacterDetailPresenterMock()
+    let tester = CharacterDetailTesterMock()
     
     func makeCharactersViewController() -> CharactersDetailViewController {
         charactersDetailViewController = CharactersDetailViewController(with: nil)
-        charactersDetailViewController.characterDetailPresenter = presenter
+        charactersDetailViewController.characterDetailTester = tester
         charactersDetailViewController.loadViewIfNeeded()
         return charactersDetailViewController
     }
@@ -24,14 +24,14 @@ class CharacterDetailViewControllerTest: XCTestCase {
         XCTAssertNotNil(charactersDetailViewController)
     }
     
-    func testViewDidLoadCallsPresenter() {
+    func testViewDidLoadCallsTester() {
         let charactersViewController = makeCharactersViewController()
         charactersViewController.viewDidLoad()
-        XCTAssertTrue(presenter.onViewLoadedCalled)
+        XCTAssertTrue(tester.onViewLoadedCalled)
     }
 }
 
-class CharacterDetailPresenterMock: CharacterDetailPresenter {
+class CharacterDetailTesterMock: CharacterDetailTester {
     private(set) var onViewLoadedCalled = false
     func onViewLoaded() {
         onViewLoadedCalled = true
