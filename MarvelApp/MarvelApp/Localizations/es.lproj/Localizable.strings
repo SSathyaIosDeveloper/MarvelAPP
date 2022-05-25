@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MarvelApp
+
+  Created by admin on 5/25/22.
+  
+*/
+
+"Something went wrong. Please try again later" = "Algo salió mal. Por favor, inténtelo de nuevo más tarde.";
+"DESCRIPTION NOT AVAILABLE FOR THIS CHARACTER" = "DESCRIPCIÓN NO DISPONIBLE PARA ESTE PERSONAJE";
+"Ok" = "De acuerdo";
+"Characters" = "Caracteres";
+"Character Detail Info" = "Información detallada del personaje";

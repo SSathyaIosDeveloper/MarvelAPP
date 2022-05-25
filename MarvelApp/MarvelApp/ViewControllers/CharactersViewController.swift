@@ -45,7 +45,7 @@ class CharactersViewController: UIViewController {
     
     func setUpNavigationController() {
         self.navigationController?.navigationBar.prefersLargeTitles = false
-        title = CHARACTERS_TITLE
+        title = NSLocalizedString("Characters", comment: CHARACTERS_TITLE)
     }
     
     func setUpActivityIndicator() {
@@ -75,7 +75,7 @@ class CharactersViewController: UIViewController {
             DispatchQueue.main.async { self.characterTableView.reloadData() }
         }
         charactersViewModel.showError = {
-            DispatchQueue.main.async { self.showAlert(ERROR_MSG) }
+            DispatchQueue.main.async { self.showAlert(NSLocalizedString("Something went wrong. Please try again later", comment: ERROR_MSG)) }
         }
         charactersViewModel.showLoading = {
             DispatchQueue.main.async { self.activityIndicatorView.startAnimating() }
@@ -87,7 +87,7 @@ class CharactersViewController: UIViewController {
     
     func showAlert( _ message: String ) {
         let alert = UIAlertController(title: EMPTY_STRING, message: message, preferredStyle: .alert)
-        alert.addAction( UIAlertAction(title: OK, style: .cancel, handler: nil))
+        alert.addAction( UIAlertAction(title: NSLocalizedString("OK", comment: OK), style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
 }
@@ -105,7 +105,7 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CHARACTERS_TABLEVIEW_CELL, for: indexPath) as? CharactersTableViewCell else {
             fatalError(CELL_NOT_EXISTS)
         }
-        let character = charactersViewModel.getCellViewModel( at: indexPath )
+        let character = charactersViewModel.getCellViewModel( at: indexPath)
         cell.characters = character
         cell.cellDelegate = self
         return cell

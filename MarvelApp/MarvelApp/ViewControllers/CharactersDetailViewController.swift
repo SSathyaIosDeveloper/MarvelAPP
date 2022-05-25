@@ -44,7 +44,7 @@ class CharactersDetailViewController: UIViewController {
     
     func setUpNavigationController() {
         self.navigationController?.navigationBar.prefersLargeTitles = false
-        title = CHARACTER_DETAIL_TITLE
+        title = NSLocalizedString("Character Detail Info", comment: CHARACTER_DETAIL_TITLE)
     }
     
     func setUpActivityIndicator() {
@@ -58,7 +58,7 @@ class CharactersDetailViewController: UIViewController {
     func setUpValues() {
         self.headerLabel.text = result?.name
         if result?.description == EMPTY_STRING {
-            self.descriptionLabel.text = DESCRIPTION_NOT_AVAILABLE
+            self.descriptionLabel.text = NSLocalizedString("DESCRIPTION NOT AVAILABLE FOR THIS CHARACTER", comment: DESCRIPTION_NOT_AVAILABLE)
             self.descriptionLabel.textAlignment = .center
         } else {
             self.descriptionLabel.text = result?.description
@@ -75,7 +75,7 @@ class CharactersDetailViewController: UIViewController {
             self.view.setNeedsDisplay()
         }
         characterDetailViewModel.showError = {
-            DispatchQueue.main.async { self.showAlert(ERROR_MSG) }
+            DispatchQueue.main.async { self.showAlert(NSLocalizedString("Something went wrong. Please try again later", comment: ERROR_MSG)) }
         }
         characterDetailViewModel.showLoading = {
             DispatchQueue.main.async { self.activityIndicatorView.startAnimating() }
