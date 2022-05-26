@@ -29,7 +29,8 @@
 		847A3B0E281A70E80000D6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847A3B0C281A70E80000D6CA /* Main.storyboard */; };
 		847A3B10281A70E90000D6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A3B0F281A70E90000D6CA /* Assets.xcassets */; };
 		847A3B13281A70E90000D6CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847A3B11281A70E90000D6CA /* LaunchScreen.storyboard */; };
-		847A3B1E281A70E90000D6CA /* MarvelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A3B1D281A70E90000D6CA /* MarvelAppTests.swift */; };
+		847A3B1E281A70E90000D6CA /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A3B1D281A70E90000D6CA /* MockNetworkManager.swift */; };
+		84811A6C283F5C36006440F8 /* StubCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84811A6B283F5C36006440F8 /* StubCharacterModel.swift */; };
 		8484D3F1283274FA00095670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484D3F0283274FA00095670 /* ViewController.swift */; };
 		84A729BD283291A900583733 /* SpyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A729BC283291A900583733 /* SpyNavigationController.swift */; };
 		84A729BF2832924C00583733 /* NavigationControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A729BE2832924C00583733 /* NavigationControllerTest.swift */; };
@@ -84,7 +85,8 @@
 		847A3B12281A70E90000D6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847A3B14281A70E90000D6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847A3B19281A70E90000D6CA /* MarvelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		847A3B1D281A70E90000D6CA /* MarvelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTests.swift; sourceTree = "<group>"; };
+		847A3B1D281A70E90000D6CA /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		84811A6B283F5C36006440F8 /* StubCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCharacterModel.swift; sourceTree = "<group>"; };
 		8484D3F0283274FA00095670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84A729BC283291A900583733 /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
 		84A729BE2832924C00583733 /* NavigationControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTest.swift; sourceTree = "<group>"; };
@@ -228,7 +230,6 @@
 		847A3B05281A70E80000D6CA /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
-				84A729E8283E056700583733 /* Localizations */,
 				84248CFF282BF55200F004CA /* App */,
 				843F4CAB2823FEA800CA5AA3 /* Coordinator */,
 				842ED3FB281AB1BD005BD9BB /* ViewControllers */,
@@ -240,6 +241,7 @@
 				84248CEA282ABA5F00F004CA /* Constants */,
 				847A3B39281A79F90000D6CA /* Resources */,
 				842ED3F8281A8EE8005BD9BB /* Network */,
+				84A729E8283E056700583733 /* Localizations */,
 				84248CFE282BF4C300F004CA /* Configuration */,
 			);
 			path = MarvelApp;
@@ -248,8 +250,8 @@
 		847A3B1C281A70E90000D6CA /* MarvelAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				847A3B1D281A70E90000D6CA /* MarvelAppTests.swift */,
 				84DF2115282CFC1B0069D6B5 /* NetworkManagerTest.swift */,
+				847A3B1D281A70E90000D6CA /* MockNetworkManager.swift */,
 				84A729C52832D4CF00583733 /* ViewControllerTest.swift */,
 				84DF211B282D57CA0069D6B5 /* CharactersViewControllerTest.swift */,
 				84DF211D282D63F10069D6B5 /* CharacterDetailViewControllerTest.swift */,
@@ -259,6 +261,7 @@
 				84A729BE2832924C00583733 /* NavigationControllerTest.swift */,
 				84A729C12832BA2F00583733 /* CharactersTableViewCellTest.swift */,
 				84A729C32832C47300583733 /* CharactersCollectionViewCellTest.swift */,
+				84811A6B283F5C36006440F8 /* StubCharacterModel.swift */,
 			);
 			path = MarvelAppTests;
 			sourceTree = "<group>";
@@ -446,12 +449,13 @@
 				84DF211E282D63F10069D6B5 /* CharacterDetailViewControllerTest.swift in Sources */,
 				84A729BF2832924C00583733 /* NavigationControllerTest.swift in Sources */,
 				84A729C22832BA2F00583733 /* CharactersTableViewCellTest.swift in Sources */,
+				84811A6C283F5C36006440F8 /* StubCharacterModel.swift in Sources */,
 				84A729C62832D4CF00583733 /* ViewControllerTest.swift in Sources */,
 				84DF2120282D6BCF0069D6B5 /* CharactersViewModelTest.swift in Sources */,
 				84A729C82832DBF400583733 /* CharactersDetailViewModelTest.swift in Sources */,
 				84DF2116282CFC1B0069D6B5 /* NetworkManagerTest.swift in Sources */,
 				84A729BD283291A900583733 /* SpyNavigationController.swift in Sources */,
-				847A3B1E281A70E90000D6CA /* MarvelAppTests.swift in Sources */,
+				847A3B1E281A70E90000D6CA /* MockNetworkManager.swift in Sources */,
 				84A729C42832C47300583733 /* CharactersCollectionViewCellTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

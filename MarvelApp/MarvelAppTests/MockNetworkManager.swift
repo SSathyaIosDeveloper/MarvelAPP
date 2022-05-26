@@ -12,7 +12,7 @@ enum ApiError: String, Error {
     case unknownError = "Something went wrong. Please try again later"
 }
 
-class MarvelAppTests: XCTestCase {
+class MockNetworkManager: XCTestCase {
     
     var mockNetworkManager: NetworkManagerTest?
     var charactersViewModel: CharactersViewModel?
