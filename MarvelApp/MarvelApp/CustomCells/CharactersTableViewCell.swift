@@ -12,7 +12,7 @@ protocol CollectionViewCellDelegate: AnyObject {
     func collectionView(collectionviewcell: CharactersCollectionViewCell?, result: Results, didTappedInTableViewCell: CharactersTableViewCell)
 }
 
-protocol CharactersTableViewCellTester {
+protocol CharactersTableViewCellTester: AnyObject {
     func onlayoutSubviewsCalled()
 }
 
@@ -20,7 +20,7 @@ class CharactersTableViewCell: UITableViewCell {
     
     @IBOutlet weak private var  charctersCollectionView: UICollectionView!
     weak var cellDelegate: CollectionViewCellDelegate?
-    var charactersTableViewCellTester: CharactersTableViewCellTester?
+    weak var charactersTableViewCellTester: CharactersTableViewCellTester?
     
     override func awakeFromNib() {
         self.charctersCollectionView.register(UINib(nibName: CHARACTERS_COLLECTIONVIEW_CELL, bundle: nil),forCellWithReuseIdentifier: CHARACTERS_COLLECTIONVIEW_CELL)

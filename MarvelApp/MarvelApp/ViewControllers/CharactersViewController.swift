@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol CharactersTester {
+protocol CharactersTester: AnyObject {
     func onViewLoaded()
 }
 
@@ -17,7 +17,7 @@ class CharactersViewController: UIViewController {
     private var characterTableView: UITableView
     private var activityIndicatorView: UIActivityIndicatorView
     private var charactersViewModel: CharactersViewModel
-    var charactersTester: CharactersTester?
+    weak var charactersTester: CharactersTester?
     
     init() {
         self.charactersViewModel = CharactersViewModel(networkManager: NetworkManager())

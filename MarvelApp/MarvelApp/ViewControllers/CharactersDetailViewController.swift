@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-protocol CharacterDetailTester {
+protocol CharacterDetailTester: AnyObject  {
     func onViewLoaded()
 }
 
@@ -21,7 +21,7 @@ class CharactersDetailViewController: UIViewController {
     private var characterDetailViewModel = CharacterDetailViewModel(networkManager: NetworkManager())
     private var result: Results? = Results()
     private var activityIndicatorView = UIActivityIndicatorView()
-    var characterDetailTester: CharacterDetailTester?
+    weak var characterDetailTester: CharacterDetailTester?
     
     init(with result: Results?) {
         super.init(nibName: nil, bundle: nil)
