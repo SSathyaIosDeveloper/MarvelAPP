@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol ViewTester {
+protocol ViewTester: AnyObject {
     func onViewLoaded()
 }
 
 class ViewController: UIViewController {
     
-    var viewTester: ViewTester?
+    weak var viewTester: ViewTester?
     
     override func viewDidLoad() {
         super.viewDidLoad()
